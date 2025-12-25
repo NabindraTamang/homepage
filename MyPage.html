@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamang Sishir | Home</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              accent: "#10B981",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              float: {
+                "0%,100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-15px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <!-- ================= HEADER ================= -->
+    <header class="fixed w-full bg-gray-900 border-b border-gray-800 z-50">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-primary">Tamang Sishir</h1>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#home" class="hover:text-primary">Home</a>
+          <a href="#about" class="hover:text-primary">About</a>
+          <a href="#skills" class="hover:text-primary">Skills</a>
+          <a href="#learning" class="hover:text-primary">Learning</a>
+          <a href="#experience" class="hover:text-primary">Experience</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+<section id="home" class="min-h-screen flex items-center pt-24 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- TEXT -->
+      <div class="space-y-6">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white">
+          こんにちは、私は<span class="text-primary">タマンシシル</span>です
+        </h2>
+        <p class="text-gray-300 text-lg">
+          私は現在、CADを学びながら、基礎的なウェブ開発とコンピュータスキルを身につけています。
+          このホームページでは、私の経歴やスキル、現在学んでいることをご紹介します。
+        </p>
+      </div>
+
+      <!-- PHOTO -->
+      <div class="relative flex justify-center">
+        <div
+          class="w-72 h-72 lg:w-80 lg:h-80 rounded-full
+                 bg-gradient-to-br from-blue-500 to-emerald-400
+                 flex items-center justify-center
+                 animate-float">
+
+          <img
+            src="shisir.jpg"
+            alt="Tamang Sishir Photo"
+            class="w-[90%] h-[90%] rounded-full object-cover
+                   border-4 border-gray-900"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white">About Me</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- ABOUT PHOTO -->
+      <div class="flex justify-center">
+        <div class="w-80 h-80 rounded-xl overflow-hidden border-4 border-gray-700 shadow-lg animate-float">
+          <img
+            src="tmg.jpeg"
+            alt="About Tamang Sishir"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- ABOUT TEXT -->
+      <div>
+        <p class="text-gray-300 leading-relaxed">
+          私は新しい技術を学び、スキルを向上させることに意欲的な学生です。
+          現在はCADを中心に学習しており、将来的に会社で実務に活かせる
+          実践的な技術を身につけることを目指しています。
+          規律、継続的な努力、チームワークを大切にし、学んだ知識を
+          確実に成果に結びつけることを意識しています。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEARNING ================= -->
+<section id="learning" class="py-20 bg-gray-700">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white">
+      LEARNING
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-900 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2 text-white">CAD</h3>
+        <p class="text-gray-300">
+          2D/3D設計や製図を学び、設計スキルを実務で活かせるレベルまで高めています。
+        </p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2 text-white">HTML & CSS</h3>
+        <p class="text-gray-300">
+          ウェブページの基本構造やレイアウトを学び、ポートフォリオ制作に応用しています。
+        </p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2 text-white">JavaScript Basics</h3>
+        <p class="text-gray-300">
+          ボタン操作や簡単な動作を実装し、ウェブインタラクションの理解を深めています。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-20 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white">Skills</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+        HTML（基礎）
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+        CSS（基礎）
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+        JavaScript（基礎）
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+        コンピュータ基礎
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= EXPERIENCE ================= -->
+   <section id="experience" class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+
+    <div class="max-w-5xl mx-auto bg-gray-800 p-8 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+
+      <!-- ARMY PHOTO -->
+      <div class="flex justify-center md:justify-start">
+        <div class="w-72 h-72 md:w-80 md:h-80 rounded-xl overflow-hidden border-4 border-gray-700 shadow-lg animate-float">
+          <img
+            src="army.jpg"
+            alt="Nepali Army"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- ARMY TEXT -->
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-semibold mb-2">Nepali Army</h3>
+        <p class="text-primary font-semibold mb-4">2+ Years Experience</p>
+
+        <p class="text-gray-300 leading-relaxed">
+          私はネパール陸軍で2年以上勤務した経験があります。
+          その中で、日々の訓練や任務を通じて、規律を守ること、
+          チームとして協力し目標を達成すること、与えられた役割に
+          責任を持つことの重要性を学びました。<br /><br />
+
+          特に、緊張感のある状況でも冷静に行動し、チーム内で
+          適切に連携しながら任務を遂行する能力を身につけました。
+          この経験は、プロジェクトや業務においても役立つと考えています。<br /><br />
+
+          また、軍隊での生活を通して、時間を守ること、正確に
+          作業を行うこと、小さな改善を積み重ねることの大切さを
+          自然と身につけました。これらの習慣と姿勢を活かし、
+          会社の一員としてチームと信頼関係を築きながら、
+          一つ一つの仕事に真摯に向き合い、長期的に貢献できる
+          人材を目指しています。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-20 bg-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">07091944804</h2>
+        <p class="text-gray-300">Email: shisirtmg1235@email.com</p>
+        <p class="text-gray-300">Location: Tokyo Japan</p>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 py-6 text-center">
+      <p class="text-gray-400">© 2026 Tamang Sishir</p>
+    </footer>
+  </body>
+</html>
